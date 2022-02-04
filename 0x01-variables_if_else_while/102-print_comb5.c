@@ -11,15 +11,15 @@ int main(void)
 	int jfirst;
 	int j;
 
-	for (ifirst = 48; ifirst < 58; ifirst++)
+	for (ifirst = 48 ; ifirst < 58 ; ifirst++)
 	{
-		for (i = 48; i < 58; i++)
+		for (i = 48 ; i < 58 ; i++)
 		{
 			j = i + 1;
 			jfirst = ifirst;
-			for ( ; jfirst < 58; jfirst++)
+			for ( ; jfirst < 58 ; jfirst++)
 			{
-				for ( ; j < 58; j++)
+				for ( ; j < 58 ; j++)
 				{
 					putchar(ifirst);
 					putchar(i);
