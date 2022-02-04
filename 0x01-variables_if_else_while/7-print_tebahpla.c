@@ -1,11 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
+ * main - a simple program that outputs the lowercase alphabet in reverse
  *
- *main - Entry point
- *
- *Return : Always 0 (Success)
+ * Return: 0 on success
  */
 int main(void)
 {
