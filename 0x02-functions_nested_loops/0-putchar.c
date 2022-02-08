@@ -1,22 +1,21 @@
 #include "main.h"
 /**
- *
- * Main - Entry _putchar : Writes the character c to stdou
- *
- * Return : On Success (1)
- *
- * 
- */
-
-int main (void)
+  * main - Entry point
+  *
+  * Return: Always 0
+  */
+int main(void)
 {
-     char *sh="Holberton";
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
+	_putchar('\n');
 
-     while (*sh)
-     {
-	     _putchar(*sh);
-	     sh++;
-     }
-
-      return (0);
+	return (0);
 }
