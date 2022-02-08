@@ -1,5 +1,4 @@
-#include <unistd.h>
-#include <main.h>
+#include "ain.h"
 /**
  *
  * Main - Entry _putchar : Writes the character c to stdou
