@@ -1,34 +1,41 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-  * print_triangle - Prints a triangle of squares according parameter
-  * @size: The size of the squares triangle
+  * main - Prints a Fizz Buzz program
   *
-  * Return: empty
+  * Return: Always 0 (Success)
   */
-void print_triangle(int size)
+int main(void)
 {
-	int x, y, z;
+	int x;
 
-	if (size <= 0)
+	for (x = 1; x <= 100; x++)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (x = 0; x < size; x++)
+		if ((x % 3 == 0) && (x % 5 == 0))
 		{
-			for (y = size - x; y > 1; y--)
-			{
-				_putchar(32);
-			}
+			printf("FizzBuzz");
+		}
+		else if (x % 3 == 0)
+		{
+			printf("Fizz");
+		}
+		else if (x % 5 == 0)
+		{
+			printf("Buzz");
+		}
+		else
+		{
+			printf("%d", x);
+		}
 
-			for (z = 0; z <= x; z++)
-			{
-				_putchar(35);
-			}
-
-			_putchar('\n');
+		if (x != 100)
+		{
+			printf(" ");
 		}
 	}
+
+	printf("\n");
+
+	return (0);
 }
