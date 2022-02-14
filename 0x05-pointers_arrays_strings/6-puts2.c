@@ -1,26 +1,18 @@
 #include "main.h"
+#include <stdio.h>
+
+void puts2(char *);
 
 /**
- * puts2 - Print every other character of a string
- * @str: The string to be treated
+ * main - check the code for Holberton School students.
  *
- * Return void 
- *
+ * Return: Always 0.
  */
-void puts2(char *str)
+int main(void)
 {
-	int i;
-	int j = 0;
+	char *str;
 
-	while (str[j] != '\0')
-	{
-		j++;
-	}
-
-	for (i = 0; i < j; i += 2)
-	{
-		_putchar(str[i]);
-	}
-
-	_putchar('\n');
+	str = "Holberton!\0Holberton";
+	puts2(str);
+	return (0);
 }
