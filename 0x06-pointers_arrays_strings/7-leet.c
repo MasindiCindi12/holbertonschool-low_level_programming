@@ -1,33 +1,28 @@
-#include "holberton.h"
+#include "main.h"
+#include <stdio.h>
 
 /**
-  * leet - Encodes a string into 1337
-  * @s: The string to encode
-  *
-  * Return: The encoded string
-  */
-char *leet(char *s)
+ * _strcat - Concatenates two strings
+ * @dest: The destination string
+ * @src: The source string
+ *
+ * Return: A pointer to the resulting string dest
+ */
+char *_strcat(char *dest, char *src)
 {
-	int a = 0, b = 0, l = 5;
-	char r[5] = {'A', 'E', 'O', 'T', 'L'};
-	char n[5] = {'4', '3', '0', '7', '1'};
+	int dlen = 0, i;
 
-	while (s[a])
+	while (dest[dlen])
 	{
-		b = 0;
-
-		while (b < l)
-		{
-			if (s[a] == r[b] || s[a] - 32 == r[b])
-			{
-				s[a] = n[b];
-			}
-
-			b++;
-		}
-
-		a++;
+		dlen++;
 	}
 
-	return (s);
+	for (i = 0; src[i] != 0; i++)
+	{
+		dest[dlen] = src[i];
+		dlen++;
+	}
+
+	dest[dlen] = '\0';
+	return (dest);
 }
