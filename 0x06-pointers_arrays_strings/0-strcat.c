@@ -11,12 +11,12 @@ char *_strcat(char *dest, char *src)
 {
 	int dlen = 0, i;
 
-	while(dest[dlen])
+	while (dest[dlen])
 	{
 		dlen++;
 	}
 
-	for(i = 0; src[i] != 0; i++)
+	for (i = 0; src[i] != 0; i++)
 	{
 		dest[dlen] = src[i];
 		dlen++;

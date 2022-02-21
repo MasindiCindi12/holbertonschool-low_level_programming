@@ -7,9 +7,8 @@
  * @n: The limit of the concatenation
  *
  * Return: A pointer to the resulting string dest
- *
  */
-char *+strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int dlen = 0, j = 0;
 
@@ -27,5 +26,5 @@ char *+strncat(char *dest, char *src, int n)
 
 	dest[dlen + n + 1] = '\0';
 
-	returb (dest);
+	return (dest);
 }
