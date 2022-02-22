@@ -10,9 +10,6 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-<<<<<<< HEAD
-	unsigned int a;	for (a
-=======
 	unsigned int a;
 
 	for (a = 0; a < n; a++)
@@ -22,4 +19,3 @@ char *_memset(char *s, char b, unsigned int n)
 
 	return (s);
 }
->>>>>>> c47a6777d47725732a9d40dd3d40fa872d3e29c9

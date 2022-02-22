@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _strchar - locate character in string
- * @s: source string
- * @c: character to find
- *
- * return: the string from character found
- */
-char *_strchar(char *s, char c)
+  * _strchr - locate character in string
+  * @s: source string
+  * @c: character to find
+  *
+  * Return: the string from character found
+  */
+char *_strchr(char *s, char c)
 {
 	int a = 0, b;
 
@@ -18,7 +18,7 @@ char *_strchar(char *s, char c)
 
 	for (b = 0; b <= a; b++)
 	{
-		if (c == s[a])
+		if (c == s[b])
 		{
 			s += b;
 			return (s);
