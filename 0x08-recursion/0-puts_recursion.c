@@ -6,7 +6,7 @@
  *
  *  Return: Nothing
  */
-void _putts_recursion(char *s)
+void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
