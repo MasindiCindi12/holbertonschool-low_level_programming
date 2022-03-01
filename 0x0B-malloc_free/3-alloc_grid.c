@@ -3,10 +3,10 @@
 
 /**
  * alloc_grid - ...
- * width: ..
- * height: ...
+ * @width: width of the grid , is 0 or negative 
+ * @height: height of the grid, is or negative
  *
- * Return: ...
+ * Return: Nothing
  */
 int **alloc_grid(int width, int height)
 {
