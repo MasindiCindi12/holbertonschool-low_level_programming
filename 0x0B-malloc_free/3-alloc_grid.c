@@ -10,7 +10,7 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int i, j, l;
+	int i, j, k, l;
 	int **a;
 
 	if (width <= 0 || height <= 0)
