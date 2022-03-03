@@ -2,11 +2,12 @@
 #include <stdlib.h>
 
 /**
- * array_range - ...
- * @main: ...
- *@max: ...
- *Return: integer value
- */
+  * array_range - ...
+  * @min: ...
+  * @max: ...
+  *
+  * Return: integer value
+  */
 int *array_range(int min, int max)
 {
 	int *a, i = 0;
@@ -14,14 +15,14 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 
-	a = malloc((sizeof(int) * (min - max)) + sizeof(int));
+	a = malloc((sizeof(int) * (max - min)) + sizeof(int));
 
 	if (a == NULL)
 		return (NULL);
 
 	while (min <= max)
 	{
-		a[i] = min ;
+		a[i] = min;
 		i++;
 		min++;
 	}
