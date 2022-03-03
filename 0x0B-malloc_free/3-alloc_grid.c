@@ -2,15 +2,16 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - ...
- * width: ..
- * height: ...
+ * print_grid - prints a grid of integers
+ *@grid: the address of the two dimensional grid
+ * @width: width of the grid
+ * @height: height of the grid
  *
- * Return: ...
+ * Return: Nothing
  */
 int **alloc_grid(int width, int height)
 {
-	int i, j, l;
+	int i, j, k, l;
 	int **a;
 
 	if (width <= 0 || height <= 0)
@@ -30,7 +31,7 @@ int **alloc_grid(int width, int height)
 
 		if (a[i] == NULL)
 		{
-			for (j = i; j >= 0; j++)
+			for (j = i; j >= 0; j--)
 			{
 				free(a[j]);
 			}
@@ -43,12 +44,11 @@ int **alloc_grid(int width, int height)
 
 	for (k = 0; k < height; k++)
 	{
-		for ( l = 0; l < width; l++)
+		for (l = 0; l < width; l++)
 		{
 			a[k][l] = 0;
 		}
 
 	}
-
 	return (a);
 }
