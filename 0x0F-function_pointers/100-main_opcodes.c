@@ -3,18 +3,19 @@
 #include <udis86.h>
 
 /**
-  * main - ...
-  * @argc: ...
-  * @argv: ...
-  *
-  * Return: ...
-  */
-int main(int argc, char *argv[])
+ * main - ...
+ * @argc: ...
+ * @argv: ...
+ *
+ * Return: ...
+ */
+int main(int argc, int *argv[])
 {
 	ud_t ud_obj;
 	int val = 0, i = 0;
 
-	if (argc == 2)
+
+	if (argc  == 2)
 	{
 		val = atoi(argv[1]);
 
@@ -37,4 +38,3 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
