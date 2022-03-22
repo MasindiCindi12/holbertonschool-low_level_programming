@@ -22,7 +22,7 @@ void free_listint2(listint_t **head)
 	}
 	else
 	{
-		retur;
+		return;
 	}
 
 	free(*head);
